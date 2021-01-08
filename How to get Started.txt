@@ -1,0 +1,46 @@
+Texas Instrument Python Anleitung:
+https://education.ti.com/de/materialien/ti-codes/python/nspire (rover ist ab Lektion 6.3)
+
+Rover e-guide:
+https://education.ti.com/html/webhelp/EG_Innovator/EN/content/home_innovrover_v1.4.HTML#Rover
+
+How to get Started:
+(TI-Innovator Rover Konfigurationsleitpfaden)
+https://education.ti.com/en/product-resources/getting-started-with-rover
+
+1: Rover ausschalten (Schalter in "O" position")
+2: Breadboard Kabel an den TI-Innovator Hub anschließen (der rote/ dunkle Stecker muss in den 5V port des Hubs)
+3: Schieben sie den Innovator HUB unten in den Rover.
+4: Schließen sie das andere Ende des breadboard Kabels unten in den Rover.
+5: Stecken sie den I²C Stecker hinten in den Hub und in Port1 auf der Unterseite des Rovers.
+6: Stecke den Taschenrechner in die Halterung oben auf den Rover
+7: Verbinden sie den Taschenrechner mit dem Hub mithilfe des MiniA zu MiniB Kabels. (Die A seite in den Taschenrechner)
+Der Aufbau sollte nun so Aussehen: rover_oben.jpg rover_unten.jpg
+
+Der Rover ist nun funktionsfähig.
+
+Sensoren am Rover: konfigurationsleitpfaden seite 10.png
+Weitere Informationen: https://education.ti.com/html/webhelp/EG_Innovator/EN/content/eg_innovsys/m_rv-datasheets/m_dsrvintro.HTML
+1. Farbsensor
+2. Gyroskop
+3. I²C erweiterungsport
+
+Technischen Daten zu den Sensoren:
+
+Ausgabegeräte am Rover:
+- RGB-LED
+- Lautsprecher (am Innovator HUB)
+
+Programmierung des Rovers mithilfe des TI-84 Plus CE-T Python edition:
+1. Stellen sie sicher, dass der GTR die neuste Version des Betriebsystem verwendet.
+	Installieren sie hierfür die TI Connect CE software (https://education.ti.com/de/produkte/computer-software/ti-connect-ce-sw)
+2. Drücken sie "prgm" und wählen 2:Python App
+3. Erstellen sie ein neues Python Rover script indem sie f3->f3->7 drücken und einen Namen eingeben. Bestätigen sie die Auswahl mit f5.
+4. Öfnnen sie das Modul Menü indem sie f1 und <- drücken und wählen 7:ti_rover. Dort befinden sich alle Funktionalitäten, die der Rover ausführen kann.
+
+Programmierung des Rovers mit einem PC und Pycharme:
+- Texas Instrument stellt derzeit kein Python Modul zur Verfügung.
+- Die Befehle können in ein Pythonscript (ti_rover.py) geschrieben werden und mithilfe eines Docstring dokumentiert werden.
+- Pycharme kann dann die funktionen des ti_rover.py skripts durch das "code auto complete" tool vorschlagen.
+- In Pycharme befindet sich unter view das Quickdocumentation tool (strg+Q). Dieses erlaubt es den Docstring einer beliebigen Klasse, Methode o.ä. anzeigen.
+- In den Einstellung unter "editor->general->Code Completion->Show the documentation popup" kann die Quickdocumentation auch permanent aktiviert werden.
